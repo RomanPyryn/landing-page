@@ -10,7 +10,7 @@
     "dev": "gulp",
     "build": "gulp build --build",
     "svgSprive": "gulp svgSprive",
-		"deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "author": "Roman Ryryn",
   "license": "ISC",
@@ -18,11 +18,11 @@
     "autoprefixer": "^10.4.14",
     "browser-sync": "latest",
     "del": "latest",
+    "gh-pages": "^5.0.0",
     "gulp": "latest",
     "gulp-autoprefixer": "latest",
     "gulp-clean-css": "latest",
     "gulp-file-include": "latest",
-    "gulp-gh-pages": "^0.5.4",
     "gulp-group-css-media-queries": "latest",
     "gulp-if": "latest",
     "gulp-imagemin": "latest",
