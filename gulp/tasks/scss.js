@@ -3,8 +3,10 @@ import gulpSass from "gulp-sass";
 import rename from "gulp-rename";
 import cleanCss from "gulp-clean-css";
 import webpcss from "gulp-webpcss";
-import autoprefixer from "gulp-autoprefixer";
+import autoprefixer from "autoprefixer";
 import groupCssMediaQueries from "gulp-group-css-media-queries";
+import postcss from "gulp-postcss";
+import tailwindcss from "tailwindcss";
 
 const sass = gulpSass(dartSass);
 
@@ -30,11 +32,11 @@ export const scss = () => {
 			webpClass: ".webp",
 			noWebpClass: ".no-webp"
 		}))
-		.pipe(autoprefixer({
+		.pipe(postcss([tailwindcss('./tailwind.config.js'), autoprefixer({
 			grid: true,
 			overrideBrowserslist: ["last 3 versions"],
 			cascade: true,
-		}))
+		})]))
 		.pipe(app.gulp.dest(app.path.build.css))
 		.pipe(cleanCss())
 		.pipe(rename({
