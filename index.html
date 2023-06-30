@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <link
-    href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=cyrillic-ext&_v=20230628195111"
+    href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=cyrillic-ext&_v=20230630213957"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="css/style.min.css?_v=20230628195111" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20230630213957" />
   <title>GoIT</title>
 </head>
 
@@ -111,7 +111,8 @@
           <input
             type="tel"
             name="tel"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            pattern="[0-9]{9}"
+            title="Your number must contain 9 digits!"
             required
             class="tel1 block w-full cursor-pointer rounded-lg border border-colorBg5 bg-colorBg2 pl-[60px] pr-4 py-2.5 text-sm text-colorText focus:border-colorText focus:ring-colorText md:w-216 lg:w-376"
           />
@@ -229,7 +230,8 @@
           <input
             type="tel"
             name="tel"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            pattern="[0-9]{9}"
+            title="Your number must contain 9 digits!"
             required
             class="tel2 border-colorBg5 bg-colorBg2 text-colorText focus:border-colorText focus:ring-colorText mb-6 mt-1 block w-full cursor-pointer rounded-lg border pl-[60px] pr-4 py-2.5 text-sm md:mt-2"
           />
@@ -284,37 +286,38 @@
         </address>
       </div>
       <ul class="mt-6 w-222 flex justify-between mx-auto md:mt-0">
-        <li class="pointer w-39 h-39 flex justify-center items-center rounded-full bg-gradient-to-lb from-[#C334AF] from-0% via-[#4366C9] via-25.47% via-[#EF4C5D] via-74.17% to-[#FFDC55] to-100% gradient">
-          <a href="">
+        <li
+          class="pointer w-39 h-39 rounded-full bg-gradient-to-lb from-[#C334AF] from-0% via-[#4366C9] via-25.47% via-[#EF4C5D] via-74.17% to-[#FFDC55] to-100% gradient"
+        >
+          <a class="w-full h-full flex justify-center items-center" href="">
             <svg width="12" height="12">
               <use href="img/icons/icons.svg#ig"></use>
             </svg>
           </a>
         </li>
-        <li class="pointer w-39 h-39 flex justify-center items-center rounded-full bg-[#4CAF50]">
-          <a href="">
-					</a>
+        <li class="pointer w-39 h-39 rounded-full bg-[#4CAF50]">
+          <a class="w-full h-full flex justify-center items-center" href="">
             <svg width="12" height="12">
               <use href="img/icons/icons.svg#wa"></use>
             </svg>
           </a>
         </li>
-        <li class="pointer w-39 h-39 flex justify-center items-center rounded-full bg-[#E02900]">
-          <a href="">
+        <li class="pointer w-39 h-39 rounded-full bg-[#E02900]">
+          <a class="w-full h-full flex justify-center items-center" href="">
             <svg width="12" height="12">
               <use href="img/icons/icons.svg#yt"></use>
             </svg>
           </a>
         </li>
-        <li class="pointer w-39 h-39 flex justify-center items-center rounded-full bg-[#3D6DE6]">
-          <a href="">
+        <li class="pointer w-39 h-39 rounded-full bg-[#3D6DE6]">
+          <a class="w-full h-full flex justify-center items-center" href="">
             <svg width="12" height="12">
               <use href="img/icons/icons.svg#fb"></use>
             </svg>
           </a>
         </li>
-				<li class="pointer w-39 h-39 flex justify-center items-center rounded-full bg-[#3F76B6]">
-          <a href="">
+        <li class="pointer w-39 h-39 rounded-full bg-[#3F76B6]">
+          <a class="w-full h-full flex justify-center items-center" href="">
             <svg width="12" height="12">
               <use href="img/icons/icons.svg#In"></use>
             </svg>
@@ -341,6 +344,6 @@
   </div>
 </footer>
 
-    <script src="js/app.min.js?_v=20230628195111"></script>
+    <script src="js/app.min.js?_v=20230630213957"></script>
   </body>
 </html>
