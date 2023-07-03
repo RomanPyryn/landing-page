@@ -6,6 +6,50 @@ body {
   background: linear-gradient(225deg, #c334af 0%, #4366c9 25.47%, #ef4c5d 74.17%, #ffdc55 100%);
 }
 
+.form__error {
+  position: absolute;
+  font-size: 12px;
+  line-height: 1.35;
+  color: red;
+  display: none;
+}
+
+input:valid:not(:-moz-placeholder-shown) {
+  border-color: green;
+}
+
+input:valid:not(:-ms-input-placeholder) {
+  border-color: green;
+}
+
+input:valid:not(:placeholder-shown) {
+  border-color: green;
+}
+
+input:invalid:not(:-moz-placeholder-shown) {
+  border-color: red;
+}
+
+input:invalid:not(:-ms-input-placeholder) {
+  border-color: red;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+
+input:invalid:not(:-moz-placeholder-shown) + .form__error {
+  display: block;
+}
+
+input:invalid:not(:-ms-input-placeholder) + .form__error {
+  display: block;
+}
+
+input:invalid:not(:placeholder-shown) + .form__error {
+  display: block;
+}
+
 /*
 ! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
 */
@@ -1656,6 +1700,11 @@ video {
 .focus\:border-colorText:focus {
   --tw-border-opacity: 1;
   border-color: rgb(1 1 1/var(--tw-border-opacity));
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .focus\:ring-colorText:focus {
