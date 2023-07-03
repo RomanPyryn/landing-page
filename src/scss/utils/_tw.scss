@@ -1577,6 +1577,11 @@ video {
   border-color: rgb(1 1 1 / var(--tw-border-opacity));
 }
 
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .focus\:ring-colorText:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(1 1 1 / var(--tw-ring-opacity));

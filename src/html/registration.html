@@ -8,23 +8,39 @@
       </h2>
       <form action="" method="get" class="form2 mt-4 md:mt-7">
         <label for="name" class="text-14 md:text-16">Name*</label>
-        <input
-          type="text"
-          name="name"
-          placeholder="Name"
-          required
-          class="name2 border-colorBg5 bg-colorBg2 text-colorText focus:border-colorText focus:ring-colorText mb-6 mt-1 block w-full cursor-pointer rounded-lg border px-4 py-2.5 text-sm md:mt-2"
-        />
+        <div class="relative mb-6 mt-1 md:mt-2">
+          <input
+            type="text"
+            name="name"
+            minlength="2"
+            maxlength="16"
+            placeholder="Name"
+            required
+            class="name2 border-colorBg5 bg-colorBg2 text-colorText focus:border-colorText focus:ring-colorText block w-full cursor-pointer rounded-lg border px-4 py-2.5 text-sm"
+          />
+          <span class="form__error"
+            >Your name must have min 2 and max 16 characters</span
+          >
+        </div>
         <label for="tel" class="text-14 md:text-16">Number*</label>
         <div class="relative">
+          <svg width="24" height="16" class="absolute top-3.5 left-4">
+            <use href="@img/icons/icons.svg#flag"></use>
+          </svg>
+          <svg width="20" height="20" class="absolute top-3 left-10">
+            <use href="@img/icons/icons.svg#bar"></use>
+          </svg>
+        </div>
+        <div class="relative mb-6 mt-1 md:mt-2">
           <input
             type="tel"
             name="tel"
-            pattern="[0-9]{9}"
-            title="Your number must contain 9 digits!"
+            pattern="[0-9]{7}"
+            placeholder=" "
             required
-            class="tel2 border-colorBg5 bg-colorBg2 text-colorText focus:border-colorText focus:ring-colorText mb-6 mt-1 block w-full cursor-pointer rounded-lg border pl-[60px] pr-4 py-2.5 text-sm md:mt-2"
+            class="tel2 border-colorBg5 bg-colorBg2 text-colorText focus:border-colorText focus:ring-colorText block w-full cursor-pointer rounded-lg border pl-[60px] pr-4 py-2.5 text-sm"
           />
+          <span class="form__error">Your number must contain 7 digits</span>
           <svg width="24" height="16" class="absolute top-3.5 left-4">
             <use href="@img/icons/icons.svg#flag"></use>
           </svg>
@@ -33,13 +49,18 @@
           </svg>
         </div>
         <label for="email" class="text-14 md:text-16">Email*</label>
-        <input
-          type="email"
-          name="email"
-          placeholder="time@gmail.com"
-          required
-          class="email2 border-colorBg5 bg-colorBg2 text-colorText focus:border-colorText focus:ring-colorText mt-1 block w-full cursor-pointer rounded-lg border px-4 py-2.5 text-sm md:mt-2"
-        />
+        <div class="relative mt-1 md:mt-2">
+          <input
+            type="email"
+            name="email"
+            placeholder="time@gmail.com"
+            required
+            class="email2 border-colorBg5 bg-colorBg2 text-colorText focus:border-colorText focus:ring-colorText block w-full cursor-pointer rounded-lg border px-4 py-2.5 text-sm"
+          />
+          <span class="form__error"
+            >Must contain E-Mail in the format example@site.com</span
+          >
+        </div>
         <button
           type="submit"
           class="button2 text-bold mt-6 w-full rounded-2xl border bg-colorText p-6 text-colorBg2 hover:border hover:border-colorText hover:bg-colorBg2 hover:text-colorText hover:text-bold md:mt-8 md:text-xl"
