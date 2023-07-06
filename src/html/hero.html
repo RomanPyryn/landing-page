@@ -51,7 +51,13 @@
       <source srcset="@img/hg.jpg 1x, @img/hg@2x.jpg 2x" />
       <source srcset="@img/hg.webp" />
 
-      <img src="@img/hg.jpg" alt="happy girl" />
+      <img
+        src="@img/hg.jpg"
+        alt="happy girl"
+        width="515"
+        height="495"
+        loading="lazy"
+      />
     </picture>
     <form
       action=""
@@ -60,7 +66,7 @@
     >
       <div class="space-y-5 md:space-y-0 md:space-x-8 md:flex md:items-center">
         <button
-          class="button1 w-full rounded-2xl bg-colorText px-12 py-4 text-xl font-bold text-colorBg2 border hover:border-colorText hover:bg-colorBg2 hover:text-colorText hover:border md:w-auto md:py-5"
+          class="button1 transition duration-300 ease-in-out w-full rounded-2xl bg-colorText px-12 py-4 text-xl font-bold text-colorBg2 border hover:border-colorText hover:bg-colorBg2 hover:text-colorText focus:border focus:border-colorText focus:bg-colorBg2 focus:text-colorText focus:text-bold hover:border md:w-auto md:py-5"
           type="submit"
         >
           Apply now
@@ -96,7 +102,7 @@
             required
             class="tel1 focus:outline-none block w-full cursor-pointer rounded-lg border border-colorBg5 bg-colorBg2 pl-[60px] pr-4 py-2.5 text-sm text-colorText focus:border-colorText focus:ring-colorText md:w-216 lg:w-376"
           />
-          <span class="form__error">Your number must contain 7 digits</span>
+          <span class="form__error">Your number must be in format 1234455</span>
           <svg width="24" height="16" class="absolute top-3.5 left-4">
             <use href="@img/icons/icons.svg#flag"></use>
           </svg>
