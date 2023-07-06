@@ -4,12 +4,16 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Do you want to become a  UX/UI Designer? Order a free consultation and get a bonus. GoIT - start your career in IT."
+  />
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <link
-    href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=cyrillic-ext&_v=20230703144012"
+    href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=cyrillic-ext&_v=20230706192654"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="css/style.min.css?_v=20230703144012" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20230706192654" />
   <title>GoIT</title>
 </head>
 
@@ -18,9 +22,11 @@
   <div
     class="container max-w-480 mx-auto py-6 px-5 md:w-768 md:p-8 lg:w-1440 lg:px-28 lg:pt-10"
   >
-    <svg class="w-68 h-5 md:w-100 md:h-30">
-      <use href="img/icons/icons.svg#logo"></use>
-    </svg>
+    <a href="./index.html" aria-label="Home page">
+      <svg class="w-68 h-5 md:w-100 md:h-30">
+        <use href="img/icons/icons.svg#logo"></use>
+      </svg>
+    </a>
   </div>
 </header>
 
@@ -78,7 +84,13 @@
       <source srcset="img/hg.jpg 1x, img/hg@2x.jpg 2x" />
       <source srcset="img/hg.webp" />
 
-      <img src="img/hg.jpg" alt="happy girl" />
+      <img
+        src="img/hg.jpg"
+        alt="happy girl"
+        width="515"
+        height="495"
+        loading="lazy"
+      />
     </picture>
     <form
       action=""
@@ -87,7 +99,7 @@
     >
       <div class="space-y-5 md:space-y-0 md:space-x-8 md:flex md:items-center">
         <button
-          class="button1 w-full rounded-2xl bg-colorText px-12 py-4 text-xl font-bold text-colorBg2 border hover:border-colorText hover:bg-colorBg2 hover:text-colorText hover:border md:w-auto md:py-5"
+          class="button1 transition duration-300 ease-in-out w-full rounded-2xl bg-colorText px-12 py-4 text-xl font-bold text-colorBg2 border hover:border-colorText hover:bg-colorBg2 hover:text-colorText focus:border focus:border-colorText focus:bg-colorBg2 focus:text-colorText focus:text-bold hover:border md:w-auto md:py-5"
           type="submit"
         >
           Apply now
@@ -123,7 +135,7 @@
             required
             class="tel1 focus:outline-none block w-full cursor-pointer rounded-lg border border-colorBg5 bg-colorBg2 pl-[60px] pr-4 py-2.5 text-sm text-colorText focus:border-colorText focus:ring-colorText md:w-216 lg:w-376"
           />
-          <span class="form__error">Your number must contain 7 digits</span>
+          <span class="form__error">Your number must be in format 1234455</span>
           <svg width="24" height="16" class="absolute top-3.5 left-4">
             <use href="img/icons/icons.svg#flag"></use>
           </svg>
@@ -149,7 +161,7 @@
 </section>
  <section>
   <div
-    class="relative overflow-clip container max-w-480 mx-auto py-10 px-5 md:w-768 md:px-8 md:py-15 lg:w-1440 lg:px-28 lg:py-20"
+    class="relative overflow-hidden container max-w-480 mx-auto py-10 px-5 md:w-768 md:px-8 md:py-15 lg:w-1440 lg:px-28 lg:py-20"
   >
     <h2
       class="text-24 font-bold leading-8 md:text-32 lg:text-48 lg:leading-none"
@@ -263,7 +275,7 @@
             required
             class="tel2 border-colorBg5 bg-colorBg2 text-colorText focus:border-colorText focus:ring-colorText block w-full cursor-pointer rounded-lg border pl-[60px] pr-4 py-2.5 text-sm"
           />
-          <span class="form__error">Your number must contain 7 digits</span>
+          <span class="form__error">Your number must be in format 1234455</span>
           <svg width="24" height="16" class="absolute top-3.5 left-4">
             <use href="img/icons/icons.svg#flag"></use>
           </svg>
@@ -286,7 +298,7 @@
         </div>
         <button
           type="submit"
-          class="button2 text-bold mt-6 w-full rounded-2xl border bg-colorText p-6 text-colorBg2 hover:border hover:border-colorText hover:bg-colorBg2 hover:text-colorText hover:text-bold md:mt-8 md:text-xl"
+          class="button2 transition duration-300 ease-in-out text-bold mt-6 w-full rounded-2xl border bg-colorText p-6 text-colorBg2 hover:border hover:border-colorText hover:bg-colorBg2 hover:text-colorText hover:text-bold focus:border focus:border-colorText focus:bg-colorBg2 focus:text-colorText focus:text-bold md:mt-8 md:text-xl"
         >
           Book now
         </button>
@@ -310,8 +322,8 @@
             <p>Philippines</p>
           </div>
           <div class="lg:w-280">
-            <p>+63 (905) 221-0131</p>
-            <p>admin.ph@goit.global</p>
+            <a href="tel:+639052210131">+63 (905) 221-0131</a>
+            <a href="mailto:admin.ph@goit.global"> admin.ph@goit.global </a>
           </div>
         </div>
         <address class="mt-2.5 not-italic md:w-190 md:mt-0 lg:w-280">
@@ -323,35 +335,65 @@
         <li
           class="pointer w-39 h-39 rounded-full bg-gradient-to-lb from-[#C334AF] from-0% via-[#4366C9] via-25.47% via-[#EF4C5D] via-74.17% to-[#FFDC55] to-100% gradient"
         >
-          <a class="w-full h-full flex justify-center items-center" href="">
+          <a
+            class="w-full h-full flex justify-center items-center"
+            href="https://www.instagram.com/"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
             <svg width="12" height="12">
               <use href="img/icons/icons.svg#ig"></use>
             </svg>
           </a>
         </li>
         <li class="pointer w-39 h-39 rounded-full bg-[#4CAF50]">
-          <a class="w-full h-full flex justify-center items-center" href="">
+          <a
+            class="w-full h-full flex justify-center items-center"
+            href="https://web.whatsapp.com/"
+            aria-label="WhatsApp"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
             <svg width="12" height="12">
               <use href="img/icons/icons.svg#wa"></use>
             </svg>
           </a>
         </li>
         <li class="pointer w-39 h-39 rounded-full bg-[#E02900]">
-          <a class="w-full h-full flex justify-center items-center" href="">
+          <a
+            class="w-full h-full flex justify-center items-center"
+            href="https://www.youtube.com/"
+            aria-label="YouTube"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
             <svg width="12" height="12">
               <use href="img/icons/icons.svg#yt"></use>
             </svg>
           </a>
         </li>
         <li class="pointer w-39 h-39 rounded-full bg-[#3D6DE6]">
-          <a class="w-full h-full flex justify-center items-center" href="">
+          <a
+            class="w-full h-full flex justify-center items-center"
+            href="https://www.facebook.com/"
+            aria-label="Facebook"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
             <svg width="12" height="12">
               <use href="img/icons/icons.svg#fb"></use>
             </svg>
           </a>
         </li>
         <li class="pointer w-39 h-39 rounded-full bg-[#3F76B6]">
-          <a class="w-full h-full flex justify-center items-center" href="">
+          <a
+            class="w-full h-full flex justify-center items-center"
+            href="https://www.linkedin.com/"
+            aria-label="LinkedIn"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
             <svg width="12" height="12">
               <use href="img/icons/icons.svg#In"></use>
             </svg>
@@ -378,6 +420,6 @@
   </div>
 </footer>
 
-    <script src="js/app.min.js?_v=20230703144012"></script>
+    <script src="js/app.min.js?_v=20230706192654"></script>
   </body>
 </html>
